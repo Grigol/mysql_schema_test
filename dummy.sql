@@ -16,6 +16,20 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `a_test_01`
+--
+
+DROP TABLE IF EXISTS `a_test_01`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `a_test_01` (
+  `column_a` int NOT NULL AUTO_INCREMENT,
+  `column_b` char(2) DEFAULT NULL,
+  PRIMARY KEY (`column_a`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `test_01`
 --
 
@@ -25,6 +39,7 @@ DROP TABLE IF EXISTS `test_01`;
 CREATE TABLE `test_01` (
   `column_a` int NOT NULL AUTO_INCREMENT,
   `column_b` char(2) DEFAULT NULL,
+  `column_c` int NOT NULL,
   PRIMARY KEY (`column_a`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -66,4 +81,4 @@ CREATE TABLE `test_03` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-01-15 20:44:03
+-- Dump completed on 2020-01-15 20:55:22
